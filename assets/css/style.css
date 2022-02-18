@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+:root {
+    --primary-color: rgb(11 11 11);
+    --secondary-color: rgba(212, 63, 63, 0.774);
+    --tertiary-color: white;
+  }
+
+body {
+    color: var(--secondary-color);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 80px;
+    align-content: center;
+}
+
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: var(--secondary-color);
+    background-color: var(--tertiary-color);
+    padding: 10px;
+    padding-left: 40px;
+  }
+
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding: 2px;
+  }
+
+header nav {
+    width: 40%;
+    margin: 7px 0;
+  }
+  
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+  }
+
+header li {
+    border-bottom: solid var(--secondary-color) 5px;
+    padding: 5px;
+}
+
+header nav ul li a {
+    font-weight: bold;
+    font-size: 1.55vw;
+  }
+
+.container {
+    height: 140px;
+    position: relative;
+    background-size: 100% 100px;
+    width: 100%;
+    background-image: url("../images/chevron-pattern.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    padding-left: 20px;
+    padding-right: 20px;
+}
