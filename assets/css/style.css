@@ -65,7 +65,7 @@ header li {
     height: 180px;
     position: relative;
     background-size: 100% 100px;
-    width: 100vw;
+    width: 100%;
     background-image: url("../images/chevron-pattern.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -120,12 +120,13 @@ section h1, .contact {
 
 .brain-food {
     height: 300px;
-    width: 85vw;
+    width: 84vw;
     background-image: url("../images/brain-food.jpeg");
     background-repeat: no-repeat;
     background-size: 100%;
     margin-left: 15px;
     border: solid var(--primary-color) 3px;
+    position: relative;
 }
 
 .run-buddy {
@@ -136,19 +137,42 @@ section h1, .contact {
     margin-top: 15px;
     margin-left: 15px;
     border: solid var(--primary-color) 3px;
+    position: relative;
 }
 
 .text-boxes {
-    
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
 }
 
 footer {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .contact-options {
+    font-weight: bold;
+    font-size: 1.55vw;
+    padding: 15px;
+}
+
+footer a {
+    border-bottom: solid var(--secondary-color) 5px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+/* .contact-options {
     width: 70%;
 }
 
@@ -165,4 +189,4 @@ footer li {
     padding: 5px;
     list-style: none;
     flex-direction: row;
-}
+} */
