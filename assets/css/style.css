@@ -64,7 +64,7 @@ header li {
 .container {
     height: 180px;
     position: relative;
-    background-size: 100% 100px;
+    background-size: 100%;
     width: 100%;
     background-image: url("../images/chevron-pattern.jpeg");
     background-repeat: no-repeat;
@@ -86,56 +86,58 @@ header li {
 section {
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
-}
-
-section h1, .contact {
-    width: 15vw;
-    border-right: solid var(--primary-color) 3px;
-    text-align: right;
-    padding: 10px;
-    margin: 10px;
+    padding-top: 10px;
+    width: 100%;
 }
 
 .flex-row {
     display: flex;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
-/* .about {
-    height: 100px;
-} */
+.flex-row h1 {
+    width: 10%;
+    border-right: solid var(--primary-color) 3px;
+    text-align: right;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.55vw;
+}
+
+.section-body {
+    width: 80%;
+}
 
 .about p {
-    padding-left: 15px;
     padding-top: 15px;
+    padding-left: 0px;
 }
 
 .work-boxes {
-    /* width: 90vw;
-    height: auto; */
+    height: 800px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
     padding-top: 15px;
 }
 
 .brain-food {
     height: 300px;
-    width: 84vw;
+    width: 98%;
     background-image: url("../images/brain-food.jpeg");
     background-repeat: no-repeat;
     background-size: 100%;
-    margin-left: 15px;
     border: solid var(--primary-color) 3px;
     position: relative;
 }
 
 .run-buddy {
-    height: 150px;
-    width: 42.5%;
+    height: 200px;
+    width: 48%;
     background-image: url("../images/run-buddy.jpeg");
     background-size: 100%;
-    margin-top: 15px;
-    margin-left: 15px;
     border: solid var(--primary-color) 3px;
     position: relative;
 }
@@ -147,46 +149,30 @@ section h1, .contact {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     padding: 20px;
-    text-decoration: none;
     text-align: center;
+}
+
+.text-boxes a {
+    text-decoration: none;
+    color: var(--secondary-color);
 }
 
 footer {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 10px;
 }
 
 .contact-options {
     font-weight: bold;
     font-size: 1.55vw;
-    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 footer a {
     border-bottom: solid var(--secondary-color) 5px;
     color: var(--secondary-color);
     text-decoration: none;
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center; */
 }
-
-/* .contact-options {
-    width: 70%;
-}
-
-footer a {
-    text-decoration: none;
-    color: var(--secondary-color);
-    padding: 2px;
-    font-weight: bold;
-    font-size: 1.55vw;
-  }
-
-footer li {
-    border-bottom: solid var(--secondary-color) 5px;
-    padding: 5px;
-    list-style: none;
-    flex-direction: row;
-} */
