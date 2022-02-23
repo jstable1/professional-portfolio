@@ -112,6 +112,12 @@ section {
 .about p {
     padding-top: 15px;
     padding-left: 0px;
+    font-size: 1.55vw;
+    width: 60%;
+}
+
+.about img {
+    width: 17%;
 }
 
 .work-boxes {
