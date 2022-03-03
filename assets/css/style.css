@@ -117,8 +117,8 @@ section {
 }
 
 .about img {
-    width: 16.5%;
-    padding-left: 15px;
+    width: 20%;
+    padding-top: 10px;
 }
 
 .work-boxes {
@@ -164,6 +164,8 @@ section {
     color: var(--secondary-color);
 }
 
+/* FOOTER STYLING START */
+
 footer {
     display: flex;
     flex-wrap: wrap;
@@ -183,3 +185,92 @@ footer a {
     color: var(--secondary-color);
     text-decoration: none;
 }
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 30px;
+      justify-content: center;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li {
+        border-bottom: none;
+    }
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    header {
+        padding-bottom: 10px;
+        height: 25px;
+    }    
+
+    header h1 {
+        font-size: 25px;
+        font-weight: bold;
+        color: var(--secondary-color);
+        background-color: var(--primary-color);
+        padding-top: 20px;
+    }
+
+    .container {
+        height: 75px;
+    }
+
+    .flex-row h1 {
+        width: 5%;
+    }
+
+    .work-boxes {
+        height: 680px;
+        padding-top: 5px;
+    }
+
+    .brain-food {
+        height: 248px;
+    }
+
+    .text-boxes {
+        padding: 10px;
+    }
+
+    footer a {
+        border-bottom: none;
+    }
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    .about p, .about img {
+        padding-top: 0px;
+    }
+
+    .work-boxes {
+        height: auto;
+    }
+
+    .brain-food {
+        height: 150px;
+        margin-bottom: 5px;
+    }
+
+    .run-buddy {
+        width: 98%;
+        height: 150px;
+        margin-bottom: 5px;
+    }
+  }
